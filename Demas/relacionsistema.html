@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Pagina de informatica </title>
+<link type="text/css" href="css.css" rel="stylesheet"/>
+</head>
+<header class="fondo">
+	<img class="centrado" src="titulo.jpg" width="1250" height="350">
+	
+
+	<nav>
+		<ul>
+			<li class="separador"> <a href="microprocesadores.html"> Microporcesadores </a> 
+				<ul>
+						<li class="desplegar"> <a href="microhistoria.html"> Historia </a> </li>
+				</ul>
+			</li>
+			<li class="separador"> <a href="discosduros.html"> Discos duros </a> 
+				<ul>
+						<li class="desplegar"> <a href="hdd.html"> HDD </a> </li>
+						<li class="desplegar"> <a href="sdd.html"> SDD </a> </li>
+				</ul>
+				</li>
+			<li class="separador"> <a href="ram.html" class="desplegar"> RAM </a> 
+				<ul>
+						<li class="desplegar"> <a href="relacionsistema.html"> Relacion con el sistema </a> </li>
+						<li class="desplegar"> <a href="ramhistoria.html"> Historia </a> </li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+<body bgcolor=#C5DAE0>
+	<div id="barra-lateral">
+			<div id="logo-menu">
+			</div>
+
+			<div class="contenedor-logos" id="contenedor-logos-primero">
+				<div class="logo">
+				</div>
+				<p class="title-menu"> <a href="index.html"> Inicio </a></p>
+			</div>
+
+			<div class="contenedor-logos">
+				<div class="logo">
+				</div>
+				<p class="title-menu"> <a href="microprocesadores.html"> Microprocesadores </a> </p>
+			</div>
+
+			<div class="contenedor-logos">
+				<div class="logo">
+				</div>
+				<p class="title-menu"><a href="discosduros.html"> DiscosDuros </a></p>
+			</div>
+
+			<div class="contenedor-logos">
+				<div class="logo">
+				</div>
+				<p class="title-menu"> <a href="ram.html"> Ram </a></p>
+			</div>
+		</div>
+
+
+<div class="caja" id="separadorram"> Dentro de la jerarquía de memoria, la RAM se encuentra en un nivel después de los registros del procesador y de las cachés en cuanto a velocidad. <br>
+
+Los módulos de RAM se conectan eléctricamente a un controlador de memoria que gestiona las señales entrantes y salientes de los integrados DRAM. Las señales son de tres tipos: direccionamiento, datos y señales de control. En el módulo de memoria esas señales están divididas en dos buses y un conjunto misceláneo de líneas de control y alimentación. Entre todas forman el bus de memoria que conecta la RAM con su controlador: <br> <br>
+
+Bus de datos: son las líneas que llevan información entre los integrados y el controlador. Por lo general, están agrupados en octetos siendo de 8, 16, 32 y 64 bits, cantidad que debe igualar el ancho del bus de datos del procesador. En el pasado, algunos formatos de módulo, no tenían un ancho de bus igual al del procesador. En ese caso había que montar módulos en pares o en situaciones extremas, de a 4 módulos, para completar lo que se denominaba banco de memoria, de otro modo el sistema no funciona. Esa fue la principal razón para aumentar el número de pines en los módulos, igualando al ancho de bus de procesadores como el Pentium a 64 bits, a principios de los años 1990. <br> <br>
+Bus de direcciones: es un bus en el cual se colocan las direcciones de memoria a las que se requiere acceder. No es igual al bus de direcciones del resto del sistema, ya que está multiplexado de manera que la dirección se envía en dos etapas. Para ello, el controlador realiza temporizaciones y usa las líneas de control. En cada estándar de módulo se establece un tamaño máximo en bits de este bus, estableciendo un límite teórico de la capacidad máxima por módulo. <br> <br>
+Señales misceláneas: entre las que están las de la alimentación (Vdd, Vss) que se encargan de entregar potencia a los integrados. Están las líneas de comunicación para el integrado de presencia (Serial Presence Detect) que sirve para identificar cada módulo. Están las líneas de control entre las que se encuentran las llamadas RAS (Row Address Strobe) y CAS (Column Address Strobe) que controlan el bus de direcciones, por último están las señales de reloj en las memorias sincrónicas SDRAM. </div>
+
+<img src="arquitecturam.jpg" class="caja" id="separadorfoto">
